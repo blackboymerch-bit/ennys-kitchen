@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1400" viewBox="0 0 1200 1400">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fff7ea"/>
+      <stop offset="100%" stop-color="#ffe8c7"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f4e04d"/>
+      <stop offset="100%" stop-color="#f57c00"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1400" fill="url(#bg)"/>
+  <circle cx="980" cy="200" r="170" fill="rgba(245,124,0,0.12)"/>
+  <circle cx="220" cy="220" r="120" fill="rgba(244,224,77,0.35)"/>
+  <rect x="110" y="120" width="980" height="1160" rx="40" fill="white" opacity="0.7" stroke="rgba(245,124,0,0.2)"/>
+  <ellipse cx="600" cy="680" rx="330" ry="260" fill="url(#accent)" opacity="0.22"/>
+  <circle cx="600" cy="620" r="210" fill="none" stroke="url(#accent)" stroke-width="10"/>
+  <circle cx="520" cy="570" r="34" fill="#f57c00" opacity="0.7"/>
+  <circle cx="680" cy="540" r="28" fill="#f4e04d" opacity="0.9"/>
+  <circle cx="640" cy="670" r="30" fill="#f57c00" opacity="0.8"/>
+  <circle cx="510" cy="720" r="26" fill="#f4e04d" opacity="0.75"/>
+  <rect x="330" y="1030" width="540" height="130" rx="20" fill="white"/>
+  <text x="600" y="1110" font-family="Georgia, serif" font-size="68" text-anchor="middle" fill="#7a3f00">Gallery II</text>
+  <text x="600" y="1195" font-family="Arial, sans-serif" font-size="34" text-anchor="middle" fill="#9a6b40">snacks</text>
+  <text x="600" y="90" font-family="Georgia, serif" font-size="48" text-anchor="middle" fill="#c66900">ENNY'S KITCHEN</text>
+</svg>

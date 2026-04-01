@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enny's Kitchen | Fresh Food, Fast Orders</title>
+  <meta name="description" content="Enny's Kitchen landing page with smooth animations, dynamic today's menu, food gallery, add-to-cart, social links, address, and WhatsApp checkout." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="cursor-glow"></div>
+
+  <header class="site-header glass">
+    <div class="container nav-wrap">
+      <a href="#hero" class="brand">
+        <div class="brand-logo" aria-hidden="true">E</div>
+        <div>
+          <span class="brand-name">Enny's Kitchen</span>
+          <small>Foods, Snacks, Pastries & Local Dishes</small>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a href="#today-menu">Today's Menu</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="cart-toggle" id="cartToggle" aria-label="Open cart">
+        Cart
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Freshly Made. Smoothly Served.</span>
+          <h1>Delicious meals, snacks, pastries, and local favourites delivered with ease.</h1>
+          <p>
+            Enny's Kitchen is a bright, modern food ordering landing page built with smooth animations,
+            menu sections, add-to-cart, social links, address details, and WhatsApp checkout.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#today-menu" class="btn btn-primary">See Today's Menu</a>
+            <a href="#contact" class="btn btn-secondary">Chat with Us</a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://www.instagram.com/ennyskitchen12_?igsh=ZTBleXZ6Y3N0aHN0" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://facebook.com/yourpage" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://www.tiktok.com/@ayomider30?_r=1&_t=ZS-95BOIsX335Q" target="_blank" rel="noopener">TikTok</a>
+          </div>
+
+          <div class="hero-badges">
+            <div class="badge glass">
+              <strong>Fast</strong>
+              <span>WhatsApp orders</span>
+            </div>
+            <div class="badge glass">
+              <strong>Fresh</strong>
+              <span>Daily menu updates</span>
+            </div>
+            <div class="badge glass">
+              <strong>Easy</strong>
+              <span>Add to cart checkout</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-frame glass">
+            <img src="assets/chefs pick.jpg" alt="Enny's Kitchen hero food display" />
+            <div class="floating-note glass">
+              <span>Chef's Pick</span>
+              <strong>Delicious Chicken Wrap</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="today-menu" class="section today-menu-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Welcome to Enny's Kitchen</span>
+          <h2>Today's Menu</h2>
+         <!-- <p>
+            This section is generated from JavaScript so you can update it quickly without rewriting the page layout.
+            Edit the menu array inside <code>script.js</code>.
+          </p>
+        </div>
+      -->
+        <div class="today-menu-toolbar glass reveal">
+          <div>
+            <strong id="todayDayLabel">Today's Specials</strong>
+            <p id="todayDateLabel"></p>
+          </div>
+          <button class="btn btn-secondary" id="refreshMenuBtn">Refresh Menu View</button>
+        </div>
+
+        <div class="today-menu-grid" id="todayMenuGrid"></div>
+      </div>
+    </section>
+
+    <section id="specials" class="section">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="eyebrow">Why Customers Love Enny's Kitchen</span>
+          <h2>Delicious Food, Fast Service and Convenience</h2>
+        </div>
+<!--
+        <div class="feature-grid">
+          <article class="feature glass reveal">
+            <h3>Smooth animated experience</h3>
+            <p>Elegant hover effects, reveal animations, soft glow accents, and polished transitions throughout the page.</p>
+          </article>
+          <article class="feature glass reveal">
+            <h3>Organized food sections</h3>
+            <p>Dedicated spaces for meals, pastries, snacks, local dishes, price lists, and food photography.</p>
+          </article>
+          <article class="feature glass reveal">
+            <h3>Direct WhatsApp ordering</h3>
+            <p>Customers add food items to cart and send the complete order straight to WhatsApp.</p>
+          </article>
+        </div>
+      </div> 
+    </section>-->
+
+    <section id="menu" class="section menu-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Main Menu</span>
+          <h2>Featured dishes</h2>
+          <p>If you have any questions about our menu or would like to make a special request, feel free to contact us directly via WhatsApp.</p>
+        </div>
+
+        <div class="products-grid">
+          <article class="product-card glass reveal" data-id="1" data-name="Jollof Rice & Chicken" data-price="6500">
+            <div class="product-media"><img src="assets/IMG_1.jpg" alt="Jollof Rice and Chicken" /></div>
+            <div class="product-body">
+              <span class="tag">Best Seller</span>
+              <h3>Jollof Rice & Chicken</h3>
+              <p>Smoky party-style jollof rice served with spicy grilled chicken and salad.</p>
+              <div class="product-footer">
+                <strong>₦6,500</strong>
+                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card glass reveal" data-id="2" data-name="Moi Moi & Pap Combo" data-price="3500">
+            <div class="product-media"><img src="assets/Moimoi-pap.jpg" alt="Moi Moi and Pap Combo" /></div>
+            <div class="product-body">
+              <span class="tag">Local</span>
+              <h3>Moi Moi & Pap Combo</h3>
+              <p>Soft steamed moi moi with hot pap for a filling breakfast or light meal.</p>
+              <div class="product-footer">
+                <strong>₦3,500</strong>
+                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card glass reveal" data-id="3" data-name="Puff Puff Box" data-price="2500">
+            <div class="product-media"><img src="assets/puff puff.jpg" alt="Puff Puff Box" /></div>
+            <div class="product-body">
+              <span class="tag">Snack</span>
+              <h3>Puff Puff Box</h3>
+              <p>Golden fluffy puff puff, lightly sweetened and served in generous portions.</p>
+              <div class="product-footer">
+                <strong>₦2,500</strong>
+                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card glass reveal" data-id="4" data-name="Meat Pie Pack" data-price="4000">
+            <div class="product-media"><img src="assets/meatpie.jpg" alt="Meat Pie Pack" /></div>
+            <div class="product-body">
+              <span class="tag">Pastry</span>
+              <h3>Meat Pie Pack</h3>
+              <p>Rich buttery meat pies with a savoury filling, perfect for events and quick bites.</p>
+              <div class="product-footer">
+                <strong>₦4,000</strong>
+                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card glass reveal" data-id="5" data-name="Amala & Ewedu with Assorted" data-price="7000">
+            <div class="product-media"><img src="assets/Amala.jpg" alt="Amala and Ewedu" /></div>
+            <div class="product-body">
+              <span class="tag">Traditional</span>
+              <h3>Amala & Ewedu with Assorted</h3>
+              <p>Comforting amala meal paired with fresh ewedu, stew, and well-seasoned assorted meat.</p>
+              <div class="product-footer">
+                <strong>₦7,000</strong>
+                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card glass reveal" data-id="6" data-name="Mini Cake Box" data-price="8500">
+            <div class="product-media"><img src="assets/cake.jpg" alt="Mini Cake Box" /></div>
+            <div class="product-body">
+              <span class="tag">Sweet Treat</span>
+              <h3>Mini Cake Box</h3>
+              <p>Soft, rich, and beautifully layered mini cakes for gifting, celebrations, or dessert cravings.</p>
+              <div class="product-footer">
+                <strong>₦8,500</strong>
+                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+   <!-- <section id="gallery" class="section">
+      <div class="container">
+        <div class="section-heading reveal">-->
+          <span class="eyebrow">Food Gallery</span>
+         <!-- <h2>Reserved HD image sections for your meals and pastries</h2>
+          <p>Swap these placeholders with your real dish photos inside the assets folder.</p>
+        </div>
+      -->
+        <div class="gallery-grid">
+          <div class="gallery-card glass tall reveal"><img src="assets/main dish.jpg" alt="Gallery food 1"></div>
+          <div class="gallery-card glass reveal"><img src="assets/buffalo chiecken wrap.jpg" alt="Gallery food 2"></div>
+          <div class="gallery-card glass reveal"><img src="assets/pasteries.jpg" alt="Gallery food 3"></div>
+          <div class="gallery-card glass wide reveal"><img src="assets/local meal.jpg" alt="Gallery food 4"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <span class="eyebrow">Talk to Enny's Kitchen</span>
+          <h2>Ready to take your food orders.</h2>
+          <p>
+            This demo sends all selected cart items to WhatsApp. You can update the number, social links,
+            address, logo, food images, product names, and prices inside the files.
+          </p>
+        </div>
+
+        <div class="contact-card glass reveal">
+          <h3>Brand details</h3>
+          <ul>
+            <li><strong>Brand:</strong> Enny's Kitchen</li>
+            <li><strong>Theme:</strong> Orange & Lemon</li>
+            <li><strong>Order flow:</strong> Cart to WhatsApp</li>
+            <li><strong>Address:</strong> 12 Market Road, Bodija, Ibadan, Oyo State</li>
+            <li><strong>Logo slot:</strong> Replace the “E” mark</li>
+          </ul>
+
+          <div class="address-box">
+            <strong>Visit us</strong>
+            <p>12 Market Road, Bodija, Ibadan, Oyo State</p>
+          </div>
+
+          <div class="social-links-block">
+            <strong>Follow Enny's Kitchen</strong>
+            <div class="footer-social-links">
+              <a href="https://instagram.com/yourpage" target="_blank" rel="noopener">Instagram</a>
+              <a href="https://facebook.com/yourpage" target="_blank" rel="noopener">Facebook</a>
+              <a href="https://tiktok.com/@yourpage" target="_blank" rel="noopener">TikTok</a>
+              <a href="https://x.com/yourpage" target="_blank" rel="noopener">X</a>
+            </div>
+          </div>
+
+          <button class="btn btn-primary full" id="contactWhatsApp">Chat on WhatsApp</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-panel" id="cartPanel" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="close-cart" id="closeCart" aria-label="Close cart">×</button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+      <p class="empty-cart">Your cart is empty.</p>
+    </div>
+
+    <div class="cart-summary">
+      <div class="summary-row">
+        <span>Total</span>
+        <strong id="cartTotal">₦0</strong>
+      </div>
+      <button class="btn btn-primary full" id="checkoutWhatsApp">Send Cart to WhatsApp</button>
+      <button class="btn btn-secondary full" id="clearCart">Clear Cart</button>
+    </div>
+  </aside>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="footer-left">
+        <p>© 2026 Enny's Kitchen. Fresh meals, snacks, pastries, and local dishes.</p>
+        <p>12 Market Road, Bodija, Ibadan, Oyo State.</p>
+      </div>
+      <div class="footer-social">
+        <span>Follow Us</span>
+        <div class="footer-social-links">
+          <a href="https://instagram.com/yourpage" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://facebook.com/yourpage" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://tiktok.com/@yourpage" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://x.com/yourpage" target="_blank" rel="noopener">X</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
