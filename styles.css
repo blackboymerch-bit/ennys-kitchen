@@ -100,15 +100,15 @@ button {
 }
 
 .brand-logo {
-  width: 48px;
-  height: 48px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   display: grid;
   place-items: center;
   font-family: "Playfair Display", serif;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #3e2008;
+  color: #0a0602;
   background: linear-gradient(135deg, var(--muted), var(--text));
 }
 
